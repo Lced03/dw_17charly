@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form action="formulaire.html" method="get">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name" placeholder="Ecrivez votre nom" />
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="user_email" placeholder="Ecrivez votre email" />
+        </div>
+        <div>
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" id="mdp" name="user_mdp" placeholder="Ecrivez votre mot de passe" />
+        </div>
+        <div>
+            <label for="message">Message :</label>
+            <textarea cols="20" rows="5" id="message" name="user_message"></textarea>
+        </div>
+        <div>
+            <label for="select">Liste déroulante :</label>
+        <select name="select" id="select">
+            <optgroup label="label1">
+                <option value="value1">Valeur 1</option>
+                <option value="value2">Valeur 2</option>
+                <option value="value3">Valeur 3</option>
+            </optgroup>
+            <optgroup label="label2">
+                <option value="value4">Valeur 4</option>
+                <option value="value5">Valeur 5</option>
+                <option value="value6">Valeur 6</option>
+            </optgroup>
+        </select>
+        </div>
+        <div>
+            <p>
+                Choix multiple : <br/>
+                <input type="checkbox" name="choix1" id="choix1"><label for="choix1">Choix 1</label>
+                <input type="checkbox" name="choix2" id="choix2"><label for="choix2">Choix 2</label>
+                <input type="checkbox" name="choix3" id="choix3"><label for="choix3">Choix 3</label>
+            </p>
+        </div>
+        <div>
+            <p>
+                Choix unique : <br/>
+                <input type="radio" name="choix" value="1" id="choixUnique1"><label for="choixUnique1">Choix 1</label>
+                <input type="radio" name="choix" value="2" id="choixUnique2"><label for="choixUnique2">Choix 2</label>
+                <input type="radio" name="choix" value="3" id="choixUnique3"><label for="choixUnique3">Choix 3</label>
+            </p>
+        </div>
+        <input type="submit" value="Envoyer" />
+    </form>
+</body>
+</html>

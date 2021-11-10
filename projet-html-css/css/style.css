@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav ul{
+    padding: 5px 250px;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 80px;
+    color: white;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav{
+    background-color: #000000;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../images/fond.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:center;
+    background-attachment: fixed;
+}
+
+header div{
+    margin-bottom: 50px;
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main > section{
+    padding: 50px 12%
+}
+
+section p{
+    text-align: justify;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+main > :nth-child(2n-1){
+    background-color: burlywood;
+}
+
+#container{
+    display:flex;
+}
+
+#container img{
+    width: 50%;
+    height: auto
+}
+
+#container div{
+    padding-left:14px
+}
+
+fieldset{
+    border: 1px solid #cc02ff
+}
+
+input:not([type="radio"]), textarea{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form{
+    width:50%;
+    margin:auto
+}
+
+#input_flex{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+#input_flex div{
+    width:48%
+}
+
+@media(max-width:992px){
+    #container{
+        flex-wrap: wrap
+    }
+
+    #container img{
+        width:100%
+    }
+
+    #container div{
+        padding-left:0
+    }
+
+    #input_flex{
+        flex-wrap:wrap
+    }
+
+    #input_flex div{
+        width:100%
+    }
+
+    nav a{
+        padding: 14px 8px;
+        
+    }
+
+    form{
+        width:90%
+    }
+}

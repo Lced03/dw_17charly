@@ -1,0 +1,37 @@
+h1{ /* Selectionne les titres */
+    font-size: 120px ; /* Modification de la taille du texte */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:italic; /* On met le texte en italique */
+    text-decoration: underline;
+ /* On souligne le texte */
+    color: #ceca00; /* changer la couleur */
+    text-align:center;
+    background-image: url('../images/fond_titre.jpg');
+    background-position: bottom;
+}
+
+p{
+    text-align: justify;
+    background-color: #fc43dd;
+}
+
+span{
+    color:blue;
+}
+
+ul li{
+    color: red;
+}
+
+.rose{
+    color: pink;
+}
+
+#unique{
+    color: grey;
+}
+
+
+li{
+    color: green;
+}
